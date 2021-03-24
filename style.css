@@ -1,0 +1,33 @@
+.container{
+    justify-content: flex-end;
+    flex-direction: row;
+    display: flex !important;
+    margin: 10px;
+    align-items: center;
+}
+.pictos{
+    margin: 5px;
+    
+}
+.langues{
+    margin-left: 10px;
+    justify-content: flex-end;
+    display: flex !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 10px;
+    font-weight: bolder;
+    
+}
+.langue{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 10px;
+    font-weight: bolder;
+}
+.nav-link{
+    margin: 15px;
+
+}

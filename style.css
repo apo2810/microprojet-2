@@ -1,9 +1,16 @@
+/** STYLE GENERAL **/
+body {
+    font-family: 'Open Sans', sans-serif;
+    background:black;
+    color: #D3EBF2;
+}
+/** NAVBAR **/
 .container{
     justify-content: flex-end;
     flex-direction: row;
     display: flex !important;
-    margin: 10px;
     align-items: center;
+    
 }
 .pictos{
     margin: 5px;
@@ -15,7 +22,7 @@
     display: flex !important;
     text-decoration: none;
     text-transform: uppercase;
-    color: #000000;
+    color: #D3EBF2;
     font-size: 10px;
     font-weight: bolder;
     
@@ -23,11 +30,53 @@
 .langue{
     text-decoration: none;
     text-transform: uppercase;
-    color: #000000;
+    color: #D3EBF2;
     font-size: 10px;
     font-weight: bolder;
 }
 .nav-link{
     margin: 15px;
 
+}
+.menu{
+    color: #D3EBF2 !important;
+}
+.navbar-nav{
+    margin-left: 100px;
+}
+.dropdown-toggle{
+    margin-left: 100px;
+}
+.navbar{
+    height: 100px;
+    color: black;
+    
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/** INFOS SITE **/
+.hiboux{
+    width: 600px;
+    margin-right:-100px;
+}
+.livraison{
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+}
+.texteInfos{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #D3EBF2;
+    font-size: 10px;
+}
+.infos{
+    margin: 50px;
+}
+/** Filtres **/
+.search{
+   width: 150px; 
 }

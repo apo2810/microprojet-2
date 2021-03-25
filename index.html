@@ -8,24 +8,30 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Train+One&display=swap" rel="stylesheet">      
         <title>Animinoïdes</title>
     </head>   
     <body>
         <header>
             <!-- Container-1 -->
-            <div class="container" href="#">
+            <div class="container fixed-top" href="#">
                 <img src="images/compte-sansfond.png" width="30px" class="pictos compte" href="#" alt="logo">
                 <img src="images/coeur-sansfond.png" width="30px" class="pictos coeur" href="#" alt="logo">
                 <img src="images/panier.png" width="30px" class="pictos" href="#" alt="pictos panier">
+                <a class="nav-item categories retour" href="#" ><span class="sr-only">(current)</span>Categories</a>
                 <div class="langues">
-                    <a href="#" class="langue">ENG</a> /
+                    <a href="#" class="langue choix">ENG</a> /
                     <a href="#" class="langue">JAP</a>
 
                 </div>
             </div>
         </header>
          <!-- Navebar -->
-        <nav class="navbar navbar-expand-lg navbar-dark  ml-auto mt-2 mt-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-dark  ml-auto mt-2 mt-lg-0 ">
             <a class="navbar-brand" href="#">
                 <img src="images/logo.png" width="100px" class="logo" alt="logo">
             </a>
@@ -35,28 +41,28 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav menu">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Reptilian<span class="sr-only">(current)</span></a>
+                      <a class="nav-link categories" href="#">Reptilian</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Birds</a>
+                      <a class="nav-link categories" href="#">Birds</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Feline</a>
+                      <a class="nav-link categories" href="#">Feline</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Insect</a>
+                        <a class="nav-link categories" href="#">Insect</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Rodent</a>
+                        <a class="nav-link categories" href="#">Rodent</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle categories" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Accessories
                       </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                         <a class="dropdown-item" href="#">Accessories</a>
-                         <a class="dropdown-item" href="#">Another action</a>
-                         <a class="dropdown-item" href="#">Something else here</a>
+                         <a class="dropdown-item souscategories" href="#">Accessories</a>
+                         <a class="dropdown-item souscategories" href="#">Another action</a>
+                         <a class="dropdown-item souscategories" href="#">Something else here</a>
                         </ul>
                     </li>
                 </ul>

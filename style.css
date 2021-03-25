@@ -10,19 +10,24 @@ body {
     flex-direction: row;
     display: flex !important;
     align-items: center;
-    
-    
+    margin-right: 10px;
 }
 
 .pictos{
-    margin: 5px;
+    margin: 8px;
     
 }
 .retour{
     font-size: 15px !important;
-    margin-left: 20px;
-    font-family: 'Open Sans', sans-serif !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Rajdhani', sans-serif; 
     text-align: none;
+    color: #D3EBF2 ;
+}
+.retour:hover{
+    color: white;
+    text-decoration: none;
 }
 .langues{
     margin-left: 10px;
@@ -39,7 +44,7 @@ body {
     color: #5cbcda !important;
 }
 .choix{
-    text-decoration: underline !;
+    text-decoration: underline !important;
 }
 .langue{
     text-decoration: none;
@@ -92,15 +97,23 @@ ul {
     justify-content: center;
     display: flex;
     margin: 20px;
+    font-family: 'Rajdhani', sans-serif;
 }
 .texteInfos{
     text-decoration: none;
-    text-transform: uppercase;
-    color: #a6a6a7;
-    font-size: 10px;
+    color: white ;
+    font-size: 15px;
+    line-height: 24px;
+    text-justify:distribute-all-lines;
+    font-family: 'Rajdhani', sans-serif;
 }
 .infos{
     margin: 50px;
+}
+.accroche{
+    text-transform: uppercase;
+    line-height: 40px;
+    font-size: 16px;
 }
 /** Filtres **/
 .search{

@@ -11,6 +11,7 @@ body {
     display: flex !important;
     align-items: center;
     margin-right: 10px;
+    background-color: black;
 }
 
 .pictos{
@@ -119,4 +120,43 @@ ul {
 .search{
    width: 150px; 
 }
+.filtre{
+    width: 150px;
+    margin: 20px;
+}
+.filter{
+    margin: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.option{
+    font-family: 'Rajdhani', sans-serif;
+}
+.lignes{
+    margin-top: 20px ;
+}
 /** cards **/
+.plus{
+    border-color:#5cbcda;
+    background-color: #5cbcda;
+    border-radius: 0%;
+}
+.plus:hover{
+    background-color: red;
+
+}
+
+.araigné{
+    width: 25rem;
+}
+.titre{
+    font-family: 'Rajdhani', sans-serif;
+}
+.gorille{
+    width: 25rem;
+}
+.go{
+    justify-content: right;
+    display: flex;
+    flex-direction: row;
+}

@@ -16,8 +16,20 @@
     <body>
         <!-- Container-1 -->
         <header>
-            <div class="container fixed-top" href="#">
-                <img src="images/compte-sansfond.png" width="30px" class="pictos compte" href="#" alt="logo">
+            <div class="container fixed-top navun" href="#">
+                <button class="btn btn-newsletter compte">
+                    <img src="images/compte-sansfond.png" width="30px" class="pictos compte" href="#" alt="logo">
+                </button>
+                <!--Sign up-->
+                <div class="pop-up">
+                    <div class="pop-up-content">
+                        <img class="cross" src="images/cross.svg" alt="croix" />
+                        <h1>Sign up</h1>
+                        <p>For more exclusivity</p>
+                        <input type="email" placeholder="Votre e-mail" />
+                        <button type="submit" class="btn btn-submit ">Next</button> 
+                    </div>
+                </div>
                 <img src="images/coeur-sansfond.png" width="30px" class="pictos coeur" href="#" alt="logo">
                 <img src="images/panier.png" width="30px" class="pictos" href="#" alt="pictos panier">
                 <a class=" retour" href="#" ><span class="sr-only">(current)</span>Categories</a>
@@ -54,21 +66,16 @@
                         <a class="nav-link categories" href="#">Rodent</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle categories" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown-menu" aria-haspopup="true" aria-expanded="false">
+                      <a class="nav-link categories" href="#" id="navbarDropdownMenuLink" role="button"  >
                         Accessories
                       </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                         <a class="dropdown-item souscategories" href="#">Accessories</a>
-                         <a class="dropdown-item souscategories" href="#">Another action</a>
-                         <a class="dropdown-item souscategories" href="#">Something else here</a>
-                        </ul>
                     </li>
                 </ul>
             </div>
         </nav>
         <!--Livraison-->
         <div class="livraison">
-            <a id=textelivraison>Free shipping from 2500$</a>
+            <a id=textelivraison >Free shipping from 2500$ </a>
         </div>
         <!-- Infos site !-->
         <div class="container infos " >
@@ -82,8 +89,8 @@
         <section class="filter">
             <div class="container filtre">
                 <div class="input-group mb-3 search">
-                    <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
-                    <button type="button" class="btn btn-light">ok</button>
+                    <input type="text" class="form-control search" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                    <button type="button" class="btn btn-light ok">ok</button>
                 </div>
             </div>
             <div class="form-group filtre lignes">
@@ -91,13 +98,13 @@
                     <label for="FormControlSelect-ville">Size</label>
                     <select class="form-control option" id="FormControlSelect-ville">
                         <option>...</option>
-                        <option>3cm>50cm</option>
-                        <option>50cm>1m</option>
-                        <option>1m>2m</option>
-                        <option>2m>3m</option>
-                        <option>3m>4m</option>
-                        <option>4m>5m</option>
-                        <option>5m>6m</option>
+                        <option>3cm&lt;50cm</option>
+                        <option>50cm&lt;1m</option>
+                        <option>1m&lt;2m</option>
+                        <option>2m&lt;3m</option>
+                        <option>3m&lt;4m</option>
+                        <option>4m&lt;5m</option>
+                        <option>5m&lt;6m</option>
                     </select>
                 </div>
                 <div class="lignes">
@@ -132,30 +139,35 @@
                 <div class="lignes">
                     <label for="FormControlSelect-ville">weight</label>
                     <select class="form-control option" id="FormControlSelect-ville">
-                        <option></option>
-                        <option>Asia</option>
-                        <option>Europ</option>
-                        <option>USA</option>
-                        <option>Afric</option>
-                        <option>Oceania</option>
+                        <option>...</option>
+                        <option>100g&lt;300g</option>
+                        <option>300&lt;500g</option>
+                        <option>500g&lt;700g</option>
+                        <option>700g&lt;900g</option>
+                        <option>900g&lt;2k</option>
+                        <option>2k&lt;5k</option>
+                        <option>5k&lt;10k</option>
+                        <option>10k&lt;30k</option>
+                        <option>30k&lt;50k</option>
+                        <option>50k&lt;70k</option>
+                        <option>70k&lt;90k</option>
+                        <option>90k&lt;110k</option>
+                        <option>110k&lt;130k</option>
+                        <option>130k&lt;150k</option>
+                        <option>150&lt;...</option>
                     </select>
                 </div>
             </div>
             <div class="form-group filtre">
                 <div class="ligne">
-                    <label for="FormControlSelect-ville">Colors</label>
+                    <label for="FormControlSelect-ville">Skin type</label>
                     <select class="form-control option" id="FormControlSelect-ville">
                         <option>...</option>
-                        <option>Green</option>
-                        <option>Brown</option>
-                        <option>Pink</option>
-                        <option>Grey</option>
-                        <option>Black</option>
-                        <option>White</option>
-                        <option>Purple</option>
-                        <option>Yellow</option>
-                        <option>Blue</option>
-                        <option>Orange</option>
+                        <option>Feather</option>
+                        <option>Hair</option>
+                        <option>Scales</option>
+                        <option>Coat</option>
+                        <option>Fur</option>
                     </select>
                 </div>
                 <div class="lignes">
@@ -170,6 +182,7 @@
                     </select>
                 </div>
             </div>
+            <button type="button" class="btn btn-light okay">ok</button>
         </section>
         <!-- Card -->
         <section class="request">
@@ -262,7 +275,33 @@
               </div>
         </section>
 
-        
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+              <script>
+                  // quand le DOM est prêt
+                  $(document).ready(function() {
+                      
+                      // Au clic sur le bouton 
+                      $('.btn-newsletter').on('click', function() {
+                          // on retire la classe 'close' et on ajoute la classe 'open'
+                          $('.pop-up').removeClass('close');
+                          $('.pop-up').addClass('open');
+                      });
+                      
+                      // Au clic sur la croix 
+                      $('.cross').on('click', function() {
+                          // on retire la classe 'open' et on ajoute la classe 'close'
+                          $('.pop-up').removeClass('open');
+                          $('.pop-up').addClass('close');
+                      });
+                      
+                  });
+              
+              
+              
+              </script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 

@@ -13,6 +13,123 @@ body {
     margin-right: 10px;
     background-color: black;
 }
+.navun{
+    height: 60px;
+}
+.compte{
+    margin-left: 800px;
+}
+
+.pop-up {
+    position: relative; /* pour positionner les éléments contenus dans la div (notamment la croix) par rapport à elle */
+    padding: 30px;
+    margin: 0 auto; /* pour centrer la div */
+    text-align: center;
+    background-color: #ffff;
+    opacity: 0;
+    visibility: hidden;
+    animation: drop 1s ease-in-out forwards; /* forwards : pour rester dans l'état d'arrivée */
+    animation-play-state: paused; /* état de lecture de l'animation : on la met sur pause pour éviter que l'énimation se déclencghe au chargement de la page */
+}
+.pop-up.open {
+    animation-play-state: running; /* on lance l'animation quand on clique sur le bouton */
+}
+
+.pop-up.close {
+    animation: close 1s ease-in-out forwards; /* on applique la keyframes close quand on clique sur la croix */
+}
+
+
+
+.cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    transition: transform 0.25s ease-in-out;
+}
+
+.cross:hover {
+    transform: rotateZ(90deg);
+}
+
+.pop-up h1 {
+    color: #b8161e;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.pop-up p {
+    color: #5cbcda;
+    font-size: 15px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.pop-up input {
+    display: block;
+    height: 28px;
+    padding: 4px 7px;
+    line-height: 1;
+    color: #495057;
+    border: 1px solid #ced4da;
+    transition: box-shadow 0.25s ease-in-out;
+    font-size: 14px;
+}
+
+.pop-up input:focus {
+    box-shadow: 0 0 1px 1px rgba(210,24,33,0.7);
+    outline: none;
+}
+
+.btn-submit {
+    color: #fff;
+    background-color: #b8161e;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    transition: background-color 0.25s ease-in-out;
+    font-size: 14px;
+}
+
+
+.btn-submit:hover {
+    background-color: rgb(160,34,31);
+}
+
+/* KEYFRAMES */
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-200px);
+    }
+    70% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(250px);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(200px);
+    }
+}
+
+@keyframes close {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(250px); 
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-200px);
+    }
+}
 
 .pictos{
     margin: 8px;
@@ -32,7 +149,7 @@ body {
 }
 .langues{
     margin-left: 10px;
-    justify-content: flex-end;
+    justify-content: flex-end !important;
     display: flex !important;
     text-decoration: none;
     text-transform: uppercase;
@@ -95,6 +212,9 @@ ul {
     margin-right:-100px;
 }
 .livraison{
+    text-decoration: underline  !important;
+    text-decoration-style:solid  !important;
+    text-underline-position: under !important;
     justify-content: center;
     display: flex;
     margin: 20px;
@@ -117,23 +237,48 @@ ul {
     font-size: 16px;
 }
 /** Filtres **/
+.ok{
+    color: #5cbcda;
+    margin-top: 30px;
+
+}
+.ok:hover{
+    background-color: #5cbcda;
+    color: white;
+}
 .search{
    width: 150px; 
+   font-family: 'Rajdhani', sans-serif;
+   margin-top: 30px;
 }
 .filtre{
     width: 150px;
     margin: 20px;
+    
+    
 }
 .filter{
     margin: 60px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    
 }
 .option{
     font-family: 'Rajdhani', sans-serif;
 }
 .lignes{
     margin-top: 20px ;
+}
+.okay{
+    color: #5cbcda;
+    height: 35px;
+    margin-top: 105px;
+    font-family: 'Rajdhani', sans-serif;
+}
+.okay:hover{
+    background-color: #5cbcda;
+    color: white;
 }
 /** cards **/
 .plus{
@@ -158,3 +303,4 @@ ul {
 .go{
     margin-left: 10px;
 }
+/** Slider **/

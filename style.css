@@ -156,7 +156,5 @@ ul {
     width: 25rem;
 }
 .go{
-    justify-content: right;
-    display: flex;
-    flex-direction: row;
+    margin-left: 10px;
 }

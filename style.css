@@ -282,12 +282,15 @@ ul {
     color: white;
 }
 /** cards **/
+.info{
+    margin: 80px;
+}
 .demandé{
     flex-direction: row;
     display: flex;
     justify-content: center;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 28px;
+    font-size: 28px !important;
     margin-top: 150px;
 
 }
@@ -316,9 +319,10 @@ ul {
     margin-left: 10px;
 }
 /** Slider **/
-.info{
-    margin-top: 150px;
+.image{
+    margin-top: -100px;
 }
+
 .slide{
     margin-top: 150px;
 }
@@ -357,7 +361,7 @@ ul {
     color: #000;
 }
 
-.zone h1 {
+.zone h5 {
     font-size: 3rem;
     font-weight: 700;
     line-height: 3rem;

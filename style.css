@@ -15,6 +15,7 @@ body {
 }
 .navun{
     height: 60px;
+    width: 100%;
 }
 .compte{
     margin-left: 800px;
@@ -174,9 +175,7 @@ body {
     font-size: 10px;
     font-weight: bolder;
 }
-.navbar{
-    margin-top: 30px !important;
-}
+/** Catégories **/
 
 .nav-link{
     margin: 15px;
@@ -196,18 +195,22 @@ body {
 .navbar-nav{
     margin-left: 100px;
 }
+
 .dropdown-toggle{
-    margin-left: 100px;
+    margin-left: 200px;
 }
 .navbar{
     height: 100px;
     color: black;
-    
+    margin-top: 80px !important;
 }
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+.logo{
+    margin-left: 30px;
 }
 /** INFOS SITE **/
 .hiboux{

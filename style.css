@@ -92,6 +92,9 @@ body {
     transition: background-color 0.25s ease-in-out;
     font-size: 14px;
 }
+.suivant{
+    font-family: 'Rajdhani', sans-serif;
+}
 
 
 .btn-submit:hover {
@@ -229,7 +232,12 @@ ul {
     font-family: 'Rajdhani', sans-serif;
 }
 .infos{
-    margin: 50px;
+    justify-content:center;
+    flex-direction: row;
+    display: flex !important;
+    align-items: center;
+    margin: 100px 50px;
+    background-color: black;
 }
 .accroche{
     text-transform: uppercase;
@@ -270,6 +278,10 @@ ul {
 }
 .lignes{
     margin-top: 20px ;
+    font-family: 'Rajdhani', sans-serif;
+}
+.ligne{
+    font-family: 'Rajdhani', sans-serif;
 }
 .okay{
     color: #5cbcda;
@@ -292,6 +304,10 @@ ul {
     font-family: 'Rajdhani', sans-serif;
     font-size: 28px !important;
     margin-top: 150px;
+    text-decoration: underline  !important;
+    text-decoration-style:solid  !important;
+    text-underline-position: under !important;
+    text-decoration-color: #5cbcda !important;
 
 }
 .plus{
@@ -306,14 +322,12 @@ ul {
 .plus:focus{
     border-color: #5cbcda !important;
 }
-.araigné{
-    width: 25rem;
-}
 .titre{
     font-family: 'Rajdhani', sans-serif;
 }
-.gorille{
-    width: 25rem;
+.most{
+    width: 400px;
+    margin-top: 150px;
 
 }
 
@@ -323,7 +337,7 @@ ul {
 }
 
 .slide{
-    margin-top: 150px;
+    margin-top: 250px;
 }
   .zone {
     background-color:black;
@@ -357,7 +371,7 @@ ul {
     font-size: 2.75rem;
     font-weight: 700;
     line-height: 1.75rem;
-    color: #000;
+    color: #D3EBF2;
 }
 
 .zone h5 {
@@ -365,7 +379,9 @@ ul {
     font-weight: 700;
     line-height: 3rem;
     color: #fff;
+    margin-right: 300px;
     text-align: center;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .zone p {
@@ -374,4 +390,74 @@ ul {
     line-height: 1.5rem;
     color: #fff;
     margin-bottom: 1.75rem;
+}
+/** FOOTER **/
+.containerdeux{
+    display: flex;
+    justify-content:center;
+    margin-top: 300px;
+    
+}
+.containertrois{
+    display: flex;
+    justify-content:center;
+    margin-top: 0px;
+    
+}
+.infodeux{
+    display: flex;
+    font-size: 10px;
+    text-decoration: none;
+    color: #979494 ;
+    margin-left: 0px ;
+    flex-direction: row;
+    margin-left: 50px;
+}
+.icons{
+    width: 50px;
+    flex-direction: row;
+    margin: 0 20px;
+}
+#menudeux{
+    list-style-type: none; /* pour retirer les puces */
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    flex: 1;
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+}
+#menudeux li {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+#menudeux li a {
+    color: #D3EBF2;
+    padding: 0 15px;  
+    text-decoration: none;/* enlever le soulignement et le bleu du liens */
+    flex: 1;
+    display: flex;
+    white-space:nowrap;
+    flex-direction: row;
+    font-family: 'Rajdhani', sans-serif;
+}
+.reseaux{
+    font-size: 15px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Rajdhani', sans-serif;
+}
+.joindre{
+    flex-direction: row;
+    text-decoration: overline !important;
+    text-decoration-color: #5cbcda !important;
+    text-decoration-style: solid;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 20px;
 }
